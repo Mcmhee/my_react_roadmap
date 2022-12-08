@@ -1,19 +1,108 @@
 .App {
   background-color: #282c34;
-  padding-top: 5%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 
-.user {
+.container{
+  width: 80%;
+  max-width: 780px;
+  background-color: white;
+  margin: 10px auto;
+  padding: 0px 30px;
+  min-height: 120px;
+  border-radius: 10px;
+}
+
+.header {
+  margin : 30px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
+
+.header input {
+  border: none;
+  border-bottom: solid 2px #282c34;
+  width: 60%;
+  font-size: 1rem;
+  outline: none;
+  
+}
+
+.header button {
+ border: none;
+ padding:1rem;
+ border-radius: 10px;
+ background-color: #282c34;
+ color: aliceblue;
+ font-size: 12px;
+ width: 25%;
+}
+
+.body{
+  padding : 0px 30px;
+}
+
+.word{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.word button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+ 
+}
+
+.word button:hover{
+  cursor: pointer;
+}
+
+.word img {
+  border: none; 
+  object-fit: contain;
+  
+}
+
+img {
+  color: #282c34;
+}
+
+.figure, .phonetics{
+  color: gray;
+  margin: 0px;
+}
+
+.sentence {
+  font-style: italic;
+  line-height: 25px;
+  font-size: medium;
+  border-left: solid 5px #282c34;
+  padding-left: 10px;
+}
+
+.definition{
+  font-size: 1.2rem;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wait {
+  text-align: center;
+  padding-top: 2rem;
+}
 
