@@ -73,7 +73,7 @@ function App() {
                 </div>
 
                 {/*  */}
-              <p className='figure'> {  content.data[0].meanings[0]["partOfSpeech"]} <span className='phonetics'>/ {content.data[0].phonetic} /</span></p>
+              <p className='figure'> {  content.data[0].meanings[0]["partOfSpeech"]} <span className='phonetics'> {content.data[0].phonetic} </span></p>
               <p className='definition'> {content.data[0].meanings[0]["definitions"][0]["definition"]}</p>
               <p className='sentence'> {content.data[0].meanings[0]["definitions"][0]["example"]} </p>
             </div>  
